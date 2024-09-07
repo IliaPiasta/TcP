@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/commands.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="../img/" type="image/x-icon">
+    <title>Aris Bot</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a href="" class="navbar-brand text-info">TPC Bot</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
+                    class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="https://iliapiasta.github.io/TcP/index.html#FAQ" class="nav-link">Ask me</a></li>
+                    <li class="nav-item"><a href="https://iliapiasta.github.io/TcP/index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Links</a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
+                            <li><a class="dropdown-item text-muted" href="https://discord.com/oauth2/authorize?client_id=1196199588558819449&permissions=8&scope=bot+applications.commands">Invite</a></li>
+                            <li><a class="dropdown-item text-muted" href="https://discord.com/channels/1242558139262435328/1275577431658594356">Support Server</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <li class="navbar-nav nav-item"><a href="https://discord.com/channels/1242558139262435328/1243047924116619387" class="btn btn-outline-info">Discord</a></li>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section style="margin-top: 9%;">
+            <div class="row">
+                <div class="col-sm-6 my-1">
+                    <h2 class="fw-bold">TpC Commands</h2>
+                    <p class="command-descreption">Find all Aris bot commands and information you need fast and easy</p>
+                </div>
+                <div class="col-sm-6 my-1">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4050940490843957" crossorigin="anonymous"></script>
+                    <!-- banner -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:100%;height:90px"
+                         data-ad-client="ca-pub-4050940490843957"
+                         data-ad-slot="6770580457"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <div class="mt-4"></div>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card p-3">
+                    <h5>Select Commands Category</h5>
+                    <hr />
+                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp;Commands</button>
+                    
+                        <!-- <button onclick="active(this)" id="CategoryBtn5" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Moderation Commands</button> -->
+                    
+                        <!-- <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; General Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Leveling Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Commands</button>
+                     -->
+                </div>
+            </div>
+            <div class="col-md-8 my-2">
+                <!-- <input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" /> -->
+                
+                    
+                        <div class="mt-4"></div>
+                    
+                        <div class="commands-section" id="Category0">
+
+                            <div class="accordion accordion-flush mt-2" id="1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f1">
+                                            /video&nbsp; <span class="command-descreption">- Find Youtube(video) for your topic</span>
+                                        </button>
+                                    </h2>
+                        
+                            <div class="accordion accordion-flush mt-2" id="2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">
+                                            /random_video&nbsp; <span class="command-descreption">- Random Video(Youtube)</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">
+                                            /google&nbsp; <span class="command-descreption">- Search information on the website</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="5">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /github_find&nbsp; <span class="command-descreption">- Search GitHub repositories for name</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="6">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /translate&nbsp; <span class="command-descreption">- Translate your message to another language</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="7">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /twitter&nbsp; <span class="command-descreption">- Find people on Twitter (or X)</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="8">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /flipcoin&nbsp; <span class="command-descreption">- Heads or Tails 50/50</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="9">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /dadjoke&nbsp; <span class="command-descreption">- Get a random dad joke</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="10">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /clubfinder&nbsp; <span class="command-descreption">- Find your Brawl club</span>
+                                        </button>
+                                    </h2>
+
+
+                            <div class="accordion accordion-flush mt-2" id="11">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /deafen&nbsp; <span class="command-descreption">- Mute a user in a voice channel</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="12">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /undeafen&nbsp; <span class="command-descreption">- Unmute a user in a voice channel</span>
+                                        </button>
+                                    </h2>
+
+
+                            <div class="accordion accordion-flush mt-2" id="13">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /massmove&nbsp; <span class="command-descreption">- Move all members from one voice channel to another</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="14">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /send&nbsp; <span class="command-descreption">- Send a message to a specific channel</span>
+                                        </button>
+                                    </h2>
+
+
+                            <div class="accordion accordion-flush mt-2" id="15">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /call&nbsp; <span class="command-descreption">- Send a message to a specific person in the server</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="16">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /notifyall&nbsp; <span class="command-descreption">- Send a message to all members in the server</span>
+                                        </button>
+                                    </h2>
+
+
+                            <div class="accordion accordion-flush mt-2" id="17">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /warn&nbsp; <span class="command-descreption">- Warn member and give a reason</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="18">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /clear&nbsp; <span class="command-descreption">- Deletes a specific amount of messages, optionally from a specific user</span>
+                                        </button>
+                                    </h2>
+
+
+                            <div class="accordion accordion-flush mt-2" id="19">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /kick&nbsp; <span class="command-descreption">- Kicks the specified user</span>
+                                        </button>
+                                    </h2>
+
+
+                            <div class="accordion accordion-flush mt-2" id="20">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /report&nbsp; <span class="command-descreption">-You can report a member</span>
+                                        </button>
+                                    </h2>
+
+
+                            <div class="accordion accordion-flush mt-2" id="21">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /mute&nbsp; <span class="command-descreption">- Mutes the specified user for a given duration</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="22">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /unmute&nbsp; <span class="command-descreption">- Unmutes the specified user</span>
+                                        </button>
+                                    </h2>
+
+
+                            <div class="accordion accordion-flush mt-2" id="23">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /ban&nbsp; <span class="command-descreption">- Bans the specified user for a given duration</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="24">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /unban&nbsp; <span class="command-descreption">- Unbans the specified user</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="25">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /addrank&nbsp; <span class="command-descreption">- Add a role to a user</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="26">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /delrank&nbsp; <span class="command-descreption">- Remove a role from a user</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="27">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /ranks&nbsp; <span class="command-descreption">- Get a list of all roles on the server</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="28">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /roleinfo&nbsp; <span class="command-descreption">- Get information about a role</span>
+                                        </button>
+                                    </h2>
+
+                            <div class="accordion accordion-flush mt-2" id="28">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="">
+                                            /temprole&nbsp; <span class="command-descreption">- Give a temporary role to a user</span>
+                                        </button>
+                                    </h2>
+            
+                            
+                        
+                            
+                        
+        <!-- footer -->
+
+        <div class="footer-clean bg-dark">
+            <footer>
+                <div class="page-footer font-small text-light mt-5">
+                <div class="footer-copyright text-center">
+                    © 2024 TPC COMMANDS
+                  </div>
+                </div>
+            </footer>
+        </div>
+    
+    <input id="commands" value="[{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Moderation Commands&#34;,&#34;commands&#34;:[&#34;ban&#34;,&#34;kick&#34;,&#34;mute&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Premium Commands&#34;,&#34;commands&#34;:[&#34;reactionrole&#34;,&#34;slowmode&#34;]}]" hidden />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/fontawesome/all.min.js"></script>
+    <script src="/js/animation.js"></script>
+    <script>
+        function active(elm){
+            document.getElementById("CategoryBtnAll").classList.remove("active");
+            
+                document.getElementById("CategoryBtn0").classList.remove("active");
+                document.getElementById("Category0").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn1").classList.remove("active");
+                document.getElementById("Category1").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn2").classList.remove("active");
+                document.getElementById("Category2").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn3").classList.remove("active");
+                document.getElementById("Category3").setAttribute("hidden", "");
+            
+            elm.classList.add("active");
+            if(elm.id.replace("CategoryBtn", "") == "All"){
+                
+                    document.getElementById("Category0").removeAttribute("hidden");
+                
+                    document.getElementById("Category1").removeAttribute("hidden");
+                
+                    document.getElementById("Category2").removeAttribute("hidden");
+                
+                    document.getElementById("Category3").removeAttribute("hidden");
+                
+            }else{
+                document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
+            }
+        }
+        document.getElementById("CategoryBtnAll").click();
+        function search(arg){
+            let commands = JSON.parse(document.getElementById("commands").value);
+            let cmds = [];
+            commands.forEach(category => {
+                category.commands.forEach(command => {
+                    cmds.push(command);
+                })
+            })
+            let existedCmds = cmds.filter(obj => obj.includes(arg.toLowerCase()));
+            cmds.forEach(cmd => {
+                document.getElementById(cmd).setAttribute("hidden", "");
+            })
+            existedCmds.forEach(cmd => {
+                document.getElementById(cmd).removeAttribute("hidden");
+            })
+        }
+    </script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
